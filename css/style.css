@@ -1,0 +1,66 @@
+/* Texto responsive */
+
+h1 {
+  font-size: 22px;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.oswald-center-white {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+html {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #2a6c88;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 800px;
+}
+
+.text-background {
+  color: #2a6c88;
+}
+
+@media screen and (max-width: 576px) {
+  #imagenGabrielInicio {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #imagenGabrielInicio {
+    width: 300px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
