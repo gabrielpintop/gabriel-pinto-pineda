@@ -1,3 +1,16 @@
+html {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #2a6c88;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 800px;
+}
+
 /* Texto responsive */
 
 h1 {
@@ -22,6 +35,28 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 .oswald {
   font-family: "Oswald", sans-serif;
 }
@@ -32,17 +67,8 @@ h1 {
   color: white;
 }
 
-html {
-  height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  background-color: #2a6c88;
-  max-width: 100%;
-  overflow-x: hidden;
-  min-height: 800px;
+.nanum {
+  font-family: 'Questrial', sans-serif;
 }
 
 .text-background {
@@ -63,4 +89,15 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+.zoom-hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+hr {
+  background-color: white;
+  height: 4px;
+  border: 0;
 }
