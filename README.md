@@ -33,5 +33,29 @@ En si, es una página web típica, por lo que usa componentes básicos y algunos
 - Git y GitHub
 - Slick js (para hacer slides)
 
+## Forma de correrlo - Prerrequisitos
 
-https://glpinto10.github.io/gabriel-pinto-pineda/
+Al tratarse de una página web estática, solo es necesario tener servidor web en donde se pueda abrir la página.
+
+1) Descargar o clonar los archivos del repositorio.
+2) Intalar un servidor web. Ej: https://www.npmjs.com/package/http-server
+3) Ingresar a la carpeta raíz del proyecto, abrir un CMD e inicializar el servidor.
+4) Ingresar a la URL en la que está corriendo el servidor con el proyecto. Ej: localhost:8080
+
+## Autor
+
+Gabriel Leonardo Pinto Pineda
+Código: 201515275
+Página: https://glpinto10.github.io/gabriel-pinto-pineda/
+
+## Links de importancia
+
+Link de la página: https://glpinto10.github.io/gabriel-pinto-pineda/
+Demo en video: https://www.youtube.com/watch?v=8hYHUXQktmU
+
+## Screenshot
+![Alt text](/images/capturaPaginaGabrielPintoGrande.png?raw=true "Screenshot de la página web")
+
+
+
+
