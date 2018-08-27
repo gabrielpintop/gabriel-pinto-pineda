@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <!-- Fuentes Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Fuentes Oswald & Questrial -->
     <link href="https://fonts.googleapis.com/css?family=Oswald|Questrial" rel="stylesheet">
     <!-- Animate CSS -->
@@ -18,11 +20,45 @@
         crossorigin="anonymous">
     <!-- Hoja de estilo -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+
+    <div class="zoom">
+        <a class="zoom-fab bg-info border border-light zoom-btn-large" id="zoomBtn">
+            <i class="text-light fas fa-plus"></i>
+        </a>
+        <ul class="zoom-menu">
+            <li>
+                <a class="zoom-fab zoom-btn-md border border-background bg-light scale-transition scale-out" href="#informacionAdicional">
+                    <i class="fas fa-info text-background"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-md border border-background bg-light scale-transition scale-out" href="#proyectos">
+                    <i class="fas fa-briefcase text-background"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-md border border-background bg-light scale-transition scale-out" href="#conocimientos" style="text-decoration: none">
+                    <i class="fas fa-laptop-code text-background"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-md  border border-background bg-light scale-transition scale-out" href="#estudios">
+                    <i class="fas fa-graduation-cap text-background"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-md  border border-background bg-light scale-transition scale-out" href="#inicio">
+                    <i class="text-background fas fa-user-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="row">
-        <div class="col-12 text-center mt-4 wow slideInUp">
+        <div id="inicio" class="col-12 text-center mt-4 wow slideInUp">
             <img id="imagenGabrielInicio" class="rounded-circle border border-light shadow-lg mb-1" src="images/GabrielPintoPineda.jpg"
                 alt="Gabriel Pinto Pineda ">
             <h1 class="oswald-center-white ">Gabriel Pinto Pineda</h1>
@@ -33,7 +69,7 @@
         <div class="col-12 text-center wow fadeIn " data-wow-delay="0.8s ">
             <a class="fa-stack fa-2x pointer icono rounded-circle border border-light bg-light shadow mr-2" href="https://www.linkedin.com/in/gabrielpintop/"
                 target="_blank">
-                <i class="fab fab fa-linkedin-in fa-inverse text-background "></i>
+                <i class="fab fa-linkedin-in fa-inverse text-background "></i>
             </a>
             <a class="fa-stack fa-2x pointer icono rounded-circle border border-light bg-light shadow " href="mailto:gabrielpintop@hotmail.com"
                 target="_blank">
@@ -61,12 +97,12 @@
             <div class="container container-fluid">
                 <div class="card shadow-lg">
                     <div class="mt-2 mr-3 ml-3">
-                        <p>Soy un emprendedor creativo que cuenta con una gran pasión por el desarrollo de software, en especial
+                        <p class="montserrat">Soy un emprendedor creativo que cuenta con una gran pasión por el desarrollo de software, en especial
                             el web, y la materialización de ideas beneficiosas para la sociedad con carácter innovador. Me
                             caracterizo por ser una persona con grandez razgos de liderazgo, persistente, soñador, colaborador,
                             tolerante, comunicador, puntual y capaz de trabajar con cualquier equipo.
                         </p>
-                        <p>Tengo 20 años y nací en Bogotá, Colombia. Actualmente me encuentro terminando mis estudios en Ingeniería
+                        <p class="montserrat">Tengo 20 años y nací en Bogotá, Colombia. Actualmente me encuentro terminando mis estudios en Ingeniería
                             de Sistemas y Computación en la Universidad de los Andes y a la vez que estoy empezando a cursar
                             materias de la maestría en Ingeniería de Software.
                         </p>
@@ -87,16 +123,6 @@
         <div class="col-lg-5 col-4 mt-5 wow fadeIn">
             <hr>
         </div>
-        <!-- <div class="col-12 text-center mt-3">
-            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInLeft icono" href="#estudios" role="button">
-                <i class="fas fa-graduation-cap"></i>&nbsp;Estudios</a>
-            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInLeft icono" href="#conocimientos" role="button">
-                <i class="fas fa-laptop-code"></i>&nbsp;Conocimientos</a>
-            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInRight icono" href="#proyectos" role="button">
-                <i class="fas fa-briefcase"></i>&nbsp;Proyectos</a>
-            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInRight icono" href="#pasatiempos" role="button">
-                <i class="fas fa-dumbbell"></i>&nbsp;Pasatiempos</a>
-            </div> -->
         <div class="col-12 mt-3">
             <div class="container container-fluid">
                 <div id="listaEstudios" class="row mt-2">
@@ -128,7 +154,7 @@
             <div class="container container-fluid">
                 <div class="card shadow-lg">
                     <div class="mt-2 mr-3 ml-3 wow fadeIn">
-                        <p>A lo largo de mi formación académica y personal, he ido adquiriendo grandes habilidades en diferentes
+                        <p class="montserrat">A lo largo de mi formación académica y personal, he ido adquiriendo grandes habilidades en diferentes
                             áreas, en especial en lo referente a la ingeniería de software donde manejo diferentes lenguajes
                             de programación, frameworks y herramientas que maxifican el desarrollo de las soluciones tecnológicas.
                         </p>
@@ -168,7 +194,7 @@
             <div class="container container-fluid">
                 <div class="card shadow-lg">
                     <div class="mt-2 mr-3 ml-3 wow fadeIn">
-                        <p>He sido líder de diversos proyectos de software en los cuáles me desempeñé de la mejor forma, impulsando
+                        <p class="montserrat">He sido líder de diversos proyectos de software en los cuáles me desempeñé de la mejor forma, impulsando
                             así, el trabajo de todos los miembros de mi equipo y el cumplimiento de los objetivos planteados
                             sobrepasando las expectativas.
                         </p>
@@ -179,10 +205,10 @@
         <div class="col-lg-5 col-3 mt-3 wow fadeIn">
             <hr>
         </div>
-        <div id="curiosidades" class="col-lg-2 col-6 mt-3 no-gutters text-light text-center wow fadeIn nanum">
+        <div id="informacionAdicional" class="col-lg-2 col-6 mt-3 no-gutters text-light text-center wow fadeIn nanum">
             <h1>
                 <i>
-                    Curiosidades
+                    Información adicional
                 </i>
             </h1>
         </div>
@@ -198,24 +224,24 @@
                     <div class="col-md-6 col-12 text-center wow slideInLeft">
                         <img class="rounded imagen-curiosidad shadow-lg" src="images/curiosidades/ConsilumEquipo.jpg">
                     </div>
-                    <div class="col-md-6 oswald col-12 wow slideInRight">
-                        <h2 class="mt-3">Soy cofundador y director del Departamento de Desarrollo y Diseño de "Consilium: entérate y elige",
-                            una organización compuesta por más de 30 personas de diferentes disciplinas pertenecientes a
-                            más de 8 universidades de Colombia y México.</h2>
+                    <div class="col-md-6 montserrat col-12 mt-3 wow slideInRight">
+                        <h2>Soy cofundador de "Consilium: entérate y elige", una organización compuesta por más de 30 personas
+                            de diferentes disciplinas pertenecientes a más de 8 universidades de Colombia y México. En la
+                            organización me desempeño como el director del Departamento de Desarrollo y Diseño.</h2>
                     </div>
                     <div class="col-12 wow fadeIn">
                         <br>
                         <hr>
                         <br>
                     </div>
-                    <div class="col-md-6 oswald col-12 wow slideInLeft">
-                        <h2 class="mt-2">Ineffable Inventions (invenciones inefables) es el nombre de mi empresa. La empresa es una iniciativa
-                            de desarrollo que se encarga de diseñar e implementar soluciones de software destacadas por su
-                            alto nivel de creatividad y beneficio.</h2>
+                    <div class="col-md-6 montserrat col-12 wow slideInLeft">
+                        <h2>Ineffable Inventions (invenciones inefables) es el nombre de mi empresa. </h2>
                         <h2>
-                            <b>Inefable</b> &rarr; No puede expresarse en palabras
+                            <b>Inefable</b> &rarr; No puede expresarse en palabras.
                             <br>
-                            <b>Invención</b> &rarr; Creación de algo que antes no existía</h2>
+                            <b>Invención</b> &rarr; Creación de algo que antes no existía.</h2>
+                        <h2>La empresa es una iniciativa de desarrollo que se encarga de diseñar e implementar soluciones de
+                            software destacadas por su alto nivel de creatividad y beneficio.</h2>
                     </div>
                     <div class="col-md-6 col-12 text-center wow slideInRight">
                         <img class="rounded imagen-curiosidad" src="images/curiosidades/IneffableInventions.png">
@@ -245,7 +271,7 @@
                         </blockquote>
                         <script async defer src="//www.instagram.com/embed.js"></script>
                     </div>
-                    <div class="col-md-6 col-12 oswald wow slideInRight">
+                    <div class="col-md-6 col-12 montserrat wow slideInRight">
                         <h2>En mi tiempo libre (cuando no estoy programando, trabajando con mi empresa o gestionando algún aspecto
                             de Consilium) me gusta distraerme yendo al gimnasio, viendo alguna de las películas en cartelera
                             y más que nada, jugando ping pong, deporte en el cual he ganado varios torneos recreativos.</h2>
@@ -264,12 +290,16 @@
                 </i>
             </h1>
         </div>
-        <div class="col-3 mt-5 wow fadeInDown">
+        <div class="col-3 mt-5 mb-5 wow fadeInDown">
             <hr>
         </div>
-        <div class="col-12">
-            <br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-12 mt-4 mb-5 text-center">
+            <div class="container container-fluid">
+                <img class="mx-auto shadow-lg wow fadeIn" src="images/GabrielGranVista.jpg" width="100%">
+            </div>
         </div>
+        <div class="col-12 mb-5"></div>
 
     </div>
     <!-- Optional JavaScript -->
@@ -281,6 +311,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
         crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="js/main.js "></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
