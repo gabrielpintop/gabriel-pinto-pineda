@@ -85,9 +85,6 @@ let conocimientos = [{
   'nombre': 'CSS',
   'logo': 'https://icongr.am/devicon/css3-original.svg'
 }, {
-  'nombre': 'Heroku',
-  'logo': 'https://icongr.am/devicon/heroku-plain-wordmark.svg'
-}, {
   'nombre': 'jQuery',
   'logo': 'https://icongr.am/devicon/jquery-original-wordmark.svg'
 }, ]
