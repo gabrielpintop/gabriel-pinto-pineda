@@ -4,11 +4,11 @@ let abrirCarta = '<div class="card" ';
 
 
 // Amplia los elementos al pasar sobre ellos
-
 $(".icono").hover(function () {
   $(this).toggleClass("zoom-hover", 2000);
 });
 
+// Operaciones para el Float Action Button
 $("#zoomBtn").click(function () {
   $(".zoom-btn-md").toggleClass("scale-out");
   if (!$(".zoom-card").hasClass("scale-out")) {
@@ -35,6 +35,7 @@ $(".zoom-btn-md").click(function () {
   }
 });
 
+// Arreglo con la información de mis estudios
 let estudios = [{
     nombre: "Ingeniería de Sistemas y Computación",
     entidad: "Universidad de los Andes",
@@ -68,6 +69,7 @@ let estudios = [{
   }
 ];
 
+// Arreglo con la información de mis conocimientos
 let conocimientos = [{
     nombre: "JavaScript",
     logo: "https://icongr.am/devicon/javascript-original.svg",
@@ -132,6 +134,7 @@ let conocimientos = [{
   }
 ];
 
+// Arreglo con la información de mis proyectos
 let proyectos = [{
     nombre: "Consilium México",
     url: "http://www.consiliummex.org",
@@ -158,8 +161,8 @@ let proyectos = [{
   }
 ];
 
+// Función principal
 function main() {
-  $(".fixed-action-btn").floatingActionButton();
 
   for (let index = 0; index < estudios.length; index++) {
     mostrarEstudio(estudios[index]);
@@ -176,6 +179,7 @@ function main() {
   }
 }
 
+// Se encarga de mostrar el estudio que entra en el DOM
 function mostrarEstudio(estudio) {
   let image =
     '<img class="mx-auto rounded" src="images/estudios/' +
@@ -231,6 +235,7 @@ function mostrarEstudio(estudio) {
   listaEstudios.append(columnaInicioFin);
 }
 
+// Se encarga de mostrar el conocimiento que entra en el DOM
 function mostrarConocimiento(conocimiento) {
   let listaConocimientos = $("#listaConocimientos");
   let listaLenguajes = $("#lenguajes");
@@ -262,6 +267,7 @@ function mostrarConocimiento(conocimiento) {
   }
 }
 
+// Calcula las estrellas a mostrarse
 function calcularEstrellas(rating) {
   let estrellas = "";
   for (let index = 0; index < rating; index++) {
@@ -277,6 +283,7 @@ function calcularEstrellas(rating) {
   return estrellas;
 }
 
+// Requerido para el slide
 function logicaConocimientos() {
   $(".customer-logos").slick({
     slidesToShow: 7,
@@ -302,6 +309,7 @@ function logicaConocimientos() {
   });
 }
 
+//Muestra el proyecto que entra
 function mostrarProyecto(proyecto) {
   let columna = '<div class="col-lg-4 col-12 text-center wow fadeInLeft">';
   let cardLink =
@@ -339,6 +347,7 @@ function mostrarProyecto(proyecto) {
   );
 }
 
+//Función para abrir los links al hacer click
 function abrirLink(link) {
   let win = window.open(link, "_blank");
   win.focus();
