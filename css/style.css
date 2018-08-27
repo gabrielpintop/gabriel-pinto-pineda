@@ -139,6 +139,10 @@ hr {
   box-shadow: 0 0 0 .2rem rgba(248, 249, 250, .5)
 }
 
+.estrella {
+  color: orange;
+}
+
 /* Slider - Sacado de https://codepen.io/mdashikar/pen/VWPvgE */
 
 .slick-slide {

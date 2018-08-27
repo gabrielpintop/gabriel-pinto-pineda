@@ -39,34 +39,51 @@ let estudios = [{
 
 let conocimientos = [{
   'nombre': 'JavaScript',
-  'logo': 'https://icongr.am/devicon/javascript-original.svg'
+  'logo': 'https://icongr.am/devicon/javascript-original.svg',
+  'tipo': 'lenguaje',
+  'rating': '5'
 }, {
   'nombre': 'Java',
-  'logo': 'https://icongr.am/devicon/java-original-wordmark.svg'
+  'logo': 'https://icongr.am/devicon/java-original.svg',
+  'tipo': 'lenguaje',
+  'rating': '4'
 }, {
   'nombre': 'Angular',
-  'logo': 'https://icongr.am/devicon/angularjs-plain.svg'
+  'logo': 'https://icongr.am/devicon/angularjs-plain.svg',
+  'tipo': 'framework',
+  'rating': '5'
 }, {
   'nombre': 'Node JS',
-  'logo': 'https://icongr.am/devicon/nodejs-original.svg'
+  'logo': 'https://icongr.am/devicon/nodejs-original.svg',
+  'tipo': 'framework',
+  'rating': '4'
 }, {
   'nombre': 'MongoDB',
   'logo': 'https://icongr.am/devicon/mongodb-original-wordmark.svg'
 }, {
   'nombre': 'HTML',
-  'logo': 'https://icongr.am/devicon/html5-original-wordmark.svg'
+  'logo': 'https://icongr.am/devicon/html5-original.svg',
+  'tipo': 'lenguaje',
+  'rating': '5'
+}, {
+  'nombre': 'Bootstrap',
+  'logo': 'https://icongr.am/devicon/bootstrap-plain.svg',
+  'tipo': 'framework',
+  'rating': '5'
 }, {
   'nombre': 'Git',
   'logo': 'https://icongr.am/devicon/git-original-wordmark.svg'
 }, {
   'nombre': 'PHP',
-  'logo': 'https://icongr.am/devicon/php-original.svg'
+  'logo': 'https://icongr.am/devicon/php-original.svg',
+  'tipo': 'lenguaje',
+  'rating': '3'
 }, {
   'nombre': 'C',
   'logo': 'https://icongr.am/devicon/c-original.svg'
 }, {
   'nombre': 'CSS',
-  'logo': 'https://icongr.am/devicon/css3-original-wordmark.svg'
+  'logo': 'https://icongr.am/devicon/css3-original.svg'
 }, {
   'nombre': 'Heroku',
   'logo': 'https://icongr.am/devicon/heroku-plain-wordmark.svg'
@@ -117,16 +134,45 @@ function mostrarEstudio(estudio) {
 
 function mostrarConocimiento(conocimiento) {
   let listaConocimientos = $('#listaConocimientos');
+  let listaLenguajes = $('#lenguajes');
+  let listaFrameworks = $('#frameworks');
 
   listaConocimientos.append('<div class="slide"><img src="' + conocimiento.logo + '" title="' + conocimiento.nombre + '"></div>');
+  if (conocimiento.tipo) {
+    let rating = calcularEstrellas(conocimiento.rating);
+    let agregar;
+    if (conocimiento.tipo === 'lenguaje') {
+      agregar = listaLenguajes;
+    } else if (conocimiento.tipo === 'framework') {
+      agregar = listaFrameworks;
+    }
+    agregar.append('<li class="list-group-item wow fadeInDown"><div class="row"><div class="col-6">' + conocimiento.nombre + cerrarDiv + '<div class="col-6 text-right">' + rating + '</div></div></li>');
+
+  }
+}
+
+function calcularEstrellas(rating) {
+  let estrellas = '';
+  for (let index = 0; index < rating; index++) {
+    estrellas += '<span class="fas estrella fa-star"></span>';
+  }
+
+  let total = 5 - rating;
+
+  for (let index = 0; index < total; index++) {
+    estrellas += '<span class="far estrella fa-star"></span>';
+  }
+
+  return estrellas;
+
 }
 
 function logicaConocimientos() {
   $('.customer-logos').slick({
-    slidesToShow: 6,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1400,
     arrows: false,
     dots: false,
     pauseOnHover: true,
