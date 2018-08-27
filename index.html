@@ -9,23 +9,22 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <!-- Oswald font-->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <!-- Nanum Gothic font -->
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <!-- Fuentes Oswald & Questrial -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Questrial" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <!-- Hoja de estilo -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
     <div class="row">
         <div class="col-12 text-center mt-4 wow slideInUp">
-            <img id="imagenGabrielInicio" class="rounded-circle border border-light shadow-lg" src="images/GabrielPintoPineda.jpg" alt="Gabriel Pinto Pineda ">
+            <img id="imagenGabrielInicio" class="rounded-circle border border-light shadow-lg mb-1" src="images/GabrielPintoPineda.jpg"
+                alt="Gabriel Pinto Pineda ">
             <h1 class="oswald-center-white ">Gabriel Pinto Pineda</h1>
         </div>
         <div class="col-12 oswald-center-white wow fadeIn " data-wow-delay="0.8s ">
@@ -45,23 +44,107 @@
                 <i class="fab fa-github fa-inverse text-background  "></i>
             </a>
         </div>
-        <div class="col-3 mt-5 wow fadeInUp" data-wow-delay="1s">
+        <div class="col-lg-5 col-4 mt-4 wow fadeInUp" data-wow-delay="1s">
             <hr>
         </div>
-        <div class="col-6 mt-5 no-gutters text-light text-center wow fadeInUp nanum" data-wow-delay="1s">
+        <div class="col-lg-2 col-4 mt-4 no-gutters text-light text-center wow fadeInUp nanum" data-wow-delay="1s">
             <h1>
                 <i>
-                    &nbsp;La innovación es lo que distingue a un líder de los demás&nbsp;
+                    &nbsp;Sobre mí&nbsp;
                 </i>
             </h1>
-
         </div>
-        <div class="col-3 mt-5 wow fadeInUp" data-wow-delay="1s">
+        <div class="col-lg-5 col-4 mt-4 wow fadeInUp" data-wow-delay="1s">
             <hr>
         </div>
+        <div class="col-12 text-justify mt-3 wow fadeIn" data-wow-delay="1.2s">
+            <div class="container container-fluid">
+                <div class="card shadow-lg">
+                    <div class="mt-2 mr-3 ml-3">
+                        <p>Soy un emprendedor creativo que cuenta con una gran pasión por el desarrollo de software, en especial
+                            el web, y la materialización de ideas beneficiosas para la sociedad con carácter innovador. Actualmente
+                            me encuentro terminando mi estudios en Ingeniería de Sistemas y Computación en la Universidad
+                            de los Andes.
+                        </p>
+                        <p>Me caracterizo por ser una persona con grandez razgos de liderazgo, persistente, soñador, colaborador,
+                            tolerante, comunicador, puntual y capaz de trabajar con cualquier equipo.
+                        </p>
+                        <p>He sido líder de diversos proyectos de software en los cuáles me desempeñé de la mejor forma, impulsando
+                            así, el trabajo de todos los miembros de mi equipo y el cumplimiento de los objetivos planteados
+                            sobrepasando las expectativas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-4 mt-5 wow fadeIn">
+            <hr>
+        </div>
+        <div id="estudios" class="col-lg-2 col-4 mt-5 no-gutters text-light text-center wow fadeIn nanum">
+            <h1>
+                <i>
+                    &nbsp;Estudios&nbsp;
+                </i>
+            </h1>
+        </div>
+        <div class="col-lg-5 col-4 mt-5 wow fadeIn">
+            <hr>
+        </div>
+        <!-- <div class="col-12 text-center mt-3">
+            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInLeft icono" href="#estudios" role="button">
+                <i class="fas fa-graduation-cap"></i>&nbsp;Estudios</a>
+            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInLeft icono" href="#conocimientos" role="button">
+                <i class="fas fa-laptop-code"></i>&nbsp;Conocimientos</a>
+            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInRight icono" href="#proyectos" role="button">
+                <i class="fas fa-briefcase"></i>&nbsp;Proyectos</a>
+            <a class="btn btn-background mb-2 ml-2 mr-2 btn-lg text-background wow slideInRight icono" href="#pasatiempos" role="button">
+                <i class="fas fa-dumbbell"></i>&nbsp;Pasatiempos</a>
+            </div> -->
+        <div class="col-12 mt-3">
+            <div class="container container-fluid">
+                <div id="listaEstudios" class="row mt-2">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-3 mt-5 wow fadeIn">
+            <hr>
+        </div>
+        <div id="conocimientos" class="col-lg-2 col-6 mt-5 no-gutters text-light text-center wow fadeIn nanum">
+            <h1>
+                <i>
+                    Tecnologías
+                </i>
+            </h1>
+        </div>
+        <div class="col-lg-5 col-3 mt-5 wow fadeIn">
+            <hr>
+        </div>
+        <div class="col-12 mt-3">
+            <section class="customer-logos slider wow slideInRight bg-light" id="listaConocimientos">
+                <div class="slide" id="primera">
+                </div>
+            </section>
+        </div>
+        <div class="col-12 text-justify mt-4 wow fadeIn">
+            <div class="container container-fluid">
+                <div class="card shadow-lg">
+                    <div class="mt-2 mr-3 ml-3">
+                        <p>A lo largo de mi formación académica y personal, he ido adquiriendo grandes habilidades en diferentes
+                            áreas, en especial en lo referente a la ingeniería de software donde manejo diferentes lenguajes
+                            de programación y herramientas que maxifican el desarrollo de las soluciones tecnológicas.
+                        </p>
+                        <p>
+                            Adicional a esto, y de forma autónoma, me mantengo en un continuo aprendizaje y adquisición de nuevos conceptos y tecnologías
+                            que incrementan de una manera significativa mis conocimientos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <br>
+        </div>
     </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then wow.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
@@ -71,7 +154,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
         crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="js/main.js "></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         new WOW().init();
     </script>
