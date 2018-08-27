@@ -8,6 +8,8 @@ $('.icono').hover(function () {
   $(this).toggleClass('zoom-hover', 2000);
 });
 
+
+
 let estudios = [{
   'nombre': 'Ingeniería de Sistemas y Computación',
   'entidad': 'Universidad de los Andes',
@@ -87,6 +89,29 @@ let conocimientos = [{
 }, {
   'nombre': 'jQuery',
   'logo': 'https://icongr.am/devicon/jquery-original-wordmark.svg'
+}, ];
+
+let proyectos = [{
+  'nombre': 'Consilium México',
+  'url': 'http://www.consiliummex.org',
+  'logo': 'LogoConsiliumMexico.png',
+  'widthImagen': '100',
+  'descripcion': 'Aplicación web implementada bajo el stack MEAN que se encargó de exponer la información más importante de los candidatos presidenciales de México para el año 2018. Expone la información básica de los candidatos, sus propuestas y permite la comparación entre estas.',
+  'tags': ['Idea propia', 'MEAN', 'Bootstrap', 'Heroku']
+}, {
+  'nombre': 'Autopago S.A.S.',
+  'url': 'http://www.autopago.com.co',
+  'logo': 'LogoAutopago.png',
+  'widthImagen': '152',
+  'descripcion': 'Página web completamente responsive que ilustra los aspectos más representativos de <b>Autopago S.A.S.</b>, una empresa multimarca comercializadora de vehículos. Incluye un formulario de contacto, un barra de iconos adaptable y un sistema de chat en tiempo real.',
+  'tags': ['Angular 5', 'Bootstrap', 'Apache']
+}, {
+  'nombre': 'Consilium Colombia',
+  'logo': 'LogoConsilium.png',
+  'widthImagen': '100',
+  'url': 'http://www.consiliumcol.org',
+  'descripcion': 'Aplicación web completamente responsive implementada bajo el stack MEAN que se encarga de exponer información relevante sobre las votaciones que se llevan a cabo en Colombia (elecciones presidenciales, elecciones locales, consultas populares, entre otras).',
+  'tags': ['Idea propia', 'MEAN', 'Bootstrap', 'Heroku']
 }, ]
 
 function main() {
@@ -99,6 +124,10 @@ function main() {
   }
 
   logicaConocimientos();
+
+  for (let index = 0; index < proyectos.length; index++) {
+    mostrarProyecto(proyectos[index]);
+  }
 }
 
 function mostrarEstudio(estudio) {
@@ -185,6 +214,22 @@ function logicaConocimientos() {
       }
     }]
   });
+}
+
+function mostrarProyecto(proyecto) {
+  let columna = '<div class="col-lg-4 col-12 text-center wow fadeInLeft">';
+  let cardLink = '<div class="card mx-auto pointer mb-4" style="width: 100%;max-width: 400px;" onclick="abrirLink(\'' + proyecto.url + '\')" target="_blank">';
+  let cardBody = '<div class="card-body no-gutters">';
+  let imagen = '<img class="card-img-top" src="images/proyectos/' + proyecto.logo + '" alt="' + proyecto.nombre + '" style="width: ' + proyecto.widthImagen + 'px;background-color: white">'
+  let nombreProyecto = '<p class="mt-2 card-text font-weight-bold text-background">' + proyecto.nombre + '</p>';
+  let descripcionProyecto = '<p class="mt-1 card-text">' + proyecto.descripcion + '</p>';
+  let abrirProyecto = '<div class="card-footer text-primary abrir">Abrir proyecto</div>'
+  $('#listaProyectos').after(columna + cardLink + cardBody + imagen + nombreProyecto + descripcionProyecto + cerrarDiv + abrirProyecto + cerrarDiv + cerrarDiv);
+}
+
+function abrirLink(link) {
+  let win = window.open(link, '_blank');
+  win.focus();
 }
 
 $(document).ready(main);
