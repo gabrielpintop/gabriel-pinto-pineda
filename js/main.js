@@ -162,7 +162,7 @@ let projects = [
     widthImagen: '150',
     url: 'https://www.youtube.com/watch?v=HT6egK4TwJc',
     description:
-      'This application seeks to retain the graduates of the Universidad de los Andes through a system of points from which they can obtain benefits. The application allows people to see the benefits they can obtain, how points can be obtain and the administration of those points, among other features.',
+      'This application seeks to retain the graduates of the Universidad de los Andes through a system of points from which they can obtain benefits. The application allows people to see the benefits they can obtain, how points can be obtained and the administration of those points, among other features.',
     tags: ['React JS', 'Meteor', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
