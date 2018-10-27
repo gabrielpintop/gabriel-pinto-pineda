@@ -27,15 +27,6 @@ let education = [
       'certifications/SENA_FormacionDeLideresConTalentoIntegralesYCompetitivos.pdf'
   },
   {
-    name: 'Professional course of Git and GitHub',
-    entity: 'Platzi - Apps.co',
-    image: 'platzi_github.png',
-    title: 'Course certificate',
-    date: '01/2018',
-    link:
-      'https://appsco.platzi.com/@gabrielpintop/curso/1194-git-appsco/diploma/detalle/'
-  },
-  {
     name: 'Web Development with PHP',
     entity: 'SENA',
     image: 'php.png',
@@ -50,6 +41,15 @@ let education = [
     title: 'Course certificate',
     date: '07/2018',
     link: 'certifications/CCB_TecnicasDeVentas.pdf'
+  },
+  {
+    name: 'Professional course of Git and GitHub',
+    entity: 'Platzi - Apps.co',
+    image: 'platzi_github.png',
+    title: 'Course certificate',
+    date: '01/2018',
+    link:
+      'https://appsco.platzi.com/@gabrielpintop/curso/1194-git-appsco/diploma/detalle/'
   },
   {
     name: 'Web Design with Adobe Dreamweaver',
@@ -166,14 +166,14 @@ let projects = [
     tags: ['React JS', 'Meteor', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
-    name: 'Consilium Colombia',
-    logo: 'LogoConsilium.png',
-    releaseDate: '02/04/2018',
+    name: 'VPP',
+    logo: 'LogoVPP.png',
+    releaseDate: '09/09/2018',
     widthImagen: '150',
-    url: 'http://www.consiliumcol.org',
+    url: 'http://vpp.ineffableinventions.com.co/',
     description:
-      'Responsive web application based on an original and innovative idea I had and that was developed using the MEAN stack. It exposes relevant and non partialized information about the political system of Colombia related to participation mechanisms.<br>The application accumulates more than 10.000 different visitors.',
-    tags: ['Angular 5', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
+      'Web application that allows citizens to interact with more than 20.000 public investment projects in Colombia by knowing and commenting about the development and implementation of them.',
+    tags: ['React JS', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
     name: 'Ineffable Inventions',
@@ -186,16 +186,6 @@ let projects = [
     tags: ['Angular 6', 'Bootstrap']
   },
   {
-    name: 'VPP',
-    logo: 'LogoVPP.png',
-    releaseDate: '09/09/2018',
-    widthImagen: '150',
-    url: 'http://vpp.ineffableinventions.com.co/',
-    description:
-      'Web application that allows citizens to interact with more than 20.000 public investment projects in Colombia by knowing and commenting about the development and implementation of them.',
-    tags: ['React JS', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
-  },
-  {
     name: 'Consilium México',
     url: 'http://www.consiliummex.org',
     logo: 'LogoConsiliumMexico.png',
@@ -203,6 +193,16 @@ let projects = [
     widthImagen: '150',
     description:
       'Responsive web application based on an idea I had and that was developed using the MEAN stack. It exposes information about the presidental candidates of Mexico´s 2018 elections and also allows the comparation of their proposals.',
+    tags: ['Angular 5', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
+  },
+  {
+    name: 'Consilium Colombia',
+    logo: 'LogoConsilium.png',
+    releaseDate: '02/04/2018',
+    widthImagen: '150',
+    url: 'http://www.consiliumcol.org',
+    description:
+      'Responsive web application based on an original and innovative idea I had and that was developed using the MEAN stack. It exposes relevant and non partialized information about the political system of Colombia related to participation mechanisms.<br>The application accumulates more than 10.000 different visitors.',
     tags: ['Angular 5', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
   }
 ];
