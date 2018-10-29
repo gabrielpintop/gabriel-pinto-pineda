@@ -156,6 +156,16 @@ let technicalSkills = [
 // Projects information
 let projects = [
   {
+    name: 'Foohealli',
+    logo: 'LogoFoohealli.png',
+    releaseDate: 'Prototype (demo video in spanish)',
+    widthImagen: '150',
+    url: 'https://youtu.be/HYYdOk2Whc4',
+    description:
+      'This application seeks to create a channel of communication between doctors, nutritionists and people who depend on a nutritional treatment, such as chronic diseases, in order to allow patients to take better treatment and improve their quality of life.',
+    tags: ['React JS', 'Meteor', 'MongoDB', 'Bootstrap', 'Heroku']
+  },
+  {
     name: 'Plan Tú U',
     logo: 'LogoPlanTuU.png',
     releaseDate: 'Soon (demo video in spanish)',
