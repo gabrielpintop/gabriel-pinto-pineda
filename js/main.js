@@ -49,7 +49,7 @@ let education = [
     title: 'Course certificate',
     date: '01/2018',
     link:
-      'https://appsco.platzi.com/@gabrielpintop/curso/1194-git-appsco/diploma/detalle/'
+      'certifications/PLATZI_ProfessionalCourseOfGitAndGitHub.pdf'
   },
   {
     name: 'Web Design with Adobe Dreamweaver',
