@@ -1,62 +1,61 @@
-# My página web personal
+# My personal web page
 
-## Descripción 
+## Description 
 
-Esta es una página que representa diferentes aspectos sobre mi. 
-Incluye:
-- Redes de contacto
-- Resumen corto
-- Estudios
-- Conocimientos (lenguajes y frameworks)
-- Proyectos 
-- Información adicional
+This is a web page that shows different aspects about me. 
+It includes:
+- Contact 
+- Brief resume
+- Education
+- Knowledge (languages and frameworks)
+- Projects 
+- Additional information
 
-Gracias a está página me podrán conocer más a fondo quién soy y lo que hay detrás de este colombiano creativo y emprendedor. 😎
+Thanks to this page, you can know me better and get to know what is behind this creative and entrepreneur colombian. 😎
 
-## Objetivo del proyecto
+## Objective
 
-Está página tiene como objetivo darme a conocer ante un mayor público, exponiendo diferentes aspectos que me permiten destacarme de entre los demás y le agregan valor significativo a mi pefil. La intención inicial radica en el hecho de lograr impactar de forma positiva a posibles clientes y/o socios. 
+This web page has as objective expose different aspects about me that let me to stand out from the others and the added significant value to my profile. The initial intention lies in the fact of achieving a positive impact in the form of potential clients and/or partners.
 
-A su vez, busca ponerme a prueba frente al uso de los nuevos conceptos aprendidos y otros que ya conocía previamente.
+At the same time, it seeks to test me against the use of new concepts learned and others that I already knew.
 
-## Tecnologías usadas
+## Used technologies
 
-En si, es una página web típica, por lo que usa componentes básicos y algunos frameworks extra.
 - HTML
 - CSS
 - JavaScript
 - jQuery
 - Bootstrap
-- Google fonts (para tener más fuentes de letra)
-- Font Awesome (iconos)
-- WOW js (permite agregarle animaciones a los elementos de la página)
+- Google fonts
+- Font Awesome (icons)
+- WOW js (animations)
 - Git y GitHub
-- Slick js (para hacer slides)
+- Slick js (slides)
 
-## Forma de correrlo - Prerrequisitos
+## How to run - Prerequisites
 
-Al tratarse de una página web estática, solo es necesario tener servidor web en donde se pueda abrir la página.
+As it is an static page, it is just necessary to have a web local server.
 
-1) Descargar o clonar los archivos del repositorio.
-2) Intalar un servidor web. Ej: https://www.npmjs.com/package/http-server
-3) Ingresar a la carpeta raíz del proyecto, abrir un CMD e inicializar el servidor.
-4) Ingresar a la URL en la que está corriendo el servidor con el proyecto. Ej: localhost:8080
+1) Clone the repository.
+2) Intall a web server. Ex: https://www.npmjs.com/package/http-server
+3) Get inside the project root, open a terminal and start the server.
+4) Go to the showed URL. Example: localhost:8080
 
-## Autor
+## Author
 
 Gabriel Leonardo Pinto Pineda
-Código: 201515275
-Página: https://glpinto10.github.io/gabriel-pinto-pineda/
+Code: 201515275
+Web page: https://gabrielpinto.me
 
-## Links de importancia
+## Important links
 
-Link de la página: https://glpinto10.github.io/gabriel-pinto-pineda/
-Demo en video: https://www.youtube.com/watch?v=8hYHUXQktmU
+Web apge: https://glpinto10.github.io/gabriel-pinto-pineda/
+Demo: https://www.youtube.com/watch?v=8hYHUXQktmU
 
 ## Screenshot
-![Alt text](/images/capturaPaginaGabrielPintoGrande.png?raw=true "Screenshot de la página web")
+![Alt text](/images/capturaPaginaGabrielPintoGrande.png?raw=true "Screenshot of the web page")
 
-## Licencia MIT
+## License
 
 The MIT License
 
