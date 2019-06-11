@@ -231,7 +231,7 @@ let experience = [
     company: 'Software Colombia S.A.S.',
     location: 'Bogotá D.C., Colombia',
     role: 'Front-End & UX Engineer',
-    image: 'software-colombia.png',
+    image: 'software_colombia.png',
     description:
       "As Front-End & UX Engineer I design and implement new components for the user interface of the oncoming second version of a well known web application. I'm also in charge of the client side security. Angular 7 is used for implementing the interface. Custom and predefined styles (CSS and SCSS) plus other dependencies are also used. The web application is responsive and the maximum user satisfaction is searched in every new implementation. Scrum is used for Agile software development.",
     date: '11/2018 - Present',
