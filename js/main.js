@@ -4,12 +4,13 @@ let openCard = '<div class="card" ';
 let allTitles = false;
 
 // Zoom hover over icons
-$('.icono').hover(function () {
+$('.icono').hover(function() {
   $(this).toggleClass('zoom-hover', 2000);
 });
 
 // Education information
-let education = [{
+let education = [
+  {
     name: 'Systems and Computing Engineering',
     entity: 'Universidad de los Andes',
     image: 'uniandes1.png',
@@ -22,7 +23,8 @@ let education = [{
     image: 'sena_1.jpeg',
     title: 'Course certificate',
     date: '07/2018 - 08/2018',
-    link: 'certifications/SENA_FormacionDeLideresConTalentoIntegralesYCompetitivos.pdf'
+    link:
+      'certifications/SENA_FormacionDeLideresConTalentoIntegralesYCompetitivos.pdf'
   },
   {
     name: 'Web Development with PHP',
@@ -67,7 +69,8 @@ let education = [{
 ];
 
 // Technical skills information
-let technicalSkills = [{
+let technicalSkills = [
+  {
     name: 'JavaScript',
     logo: 'https://icongr.am/devicon/javascript-original.svg',
     type: 'language',
@@ -150,13 +153,15 @@ let technicalSkills = [{
 ];
 
 // Projects information
-let projects = [{
+let projects = [
+  {
     name: 'Transformacciones',
     logo: 'LogoTransformacciones.png',
     releaseDate: '02/03/2019 ("UNE ESFUERZOS" category)',
     widthImagen: '150',
     url: 'http://transformacciones.ineffableinventions.com.co/',
-    description: 'Transformacciones is a transmedia documentary based on the histories of hundreds of Colombians who work to mitigate, directly or indirectly, the Sixth Mass Extinction of Species of the planet.',
+    description:
+      'Transformacciones is a transmedia documentary based on the histories of hundreds of Colombians who work to mitigate, directly or indirectly, the Sixth Mass Extinction of Species of the planet.',
     tags: ['React JS', 'NodeJS', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
@@ -165,7 +170,8 @@ let projects = [{
     releaseDate: 'Prototype (demo video in spanish)',
     widthImagen: '150',
     url: 'https://youtu.be/HYYdOk2Whc4',
-    description: 'This application seeks to create a channel of communication between doctors, nutritionists and people who depend on a nutritional treatment, such as chronic diseases, in order to allow patients to take better treatment and improve their quality of life.',
+    description:
+      'This application seeks to create a channel of communication between doctors, nutritionists and people who depend on a nutritional treatment, such as chronic diseases, in order to allow patients to take better treatment and improve their quality of life.',
     tags: ['React JS', 'Meteor', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
@@ -174,7 +180,8 @@ let projects = [{
     releaseDate: 'Soon (demo video in spanish)',
     widthImagen: '150',
     url: 'https://www.youtube.com/watch?v=HT6egK4TwJc',
-    description: 'Food - Health - Life. This application seeks to retain the graduates of the Universidad de los Andes through a system of points from which they can obtain benefits. The application allows people to see the benefits they can obtain, how points can be obtained and the administration of those points, among other features.',
+    description:
+      'Food - Health - Life. This application seeks to retain the graduates of the Universidad de los Andes through a system of points from which they can obtain benefits. The application allows people to see the benefits they can obtain, how points can be obtained and the administration of those points, among other features.',
     tags: ['React JS', 'Meteor', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
@@ -183,7 +190,8 @@ let projects = [{
     releaseDate: '09/09/2018',
     widthImagen: '150',
     url: 'http://vpp.ineffableinventions.com.co/',
-    description: 'Web application that allows citizens to interact with more than 20.000 public investment projects in Colombia by knowing and commenting about the development and implementation of them.',
+    description:
+      'Web application that allows citizens to interact with more than 20.000 public investment projects in Colombia by knowing and commenting about the development and implementation of them.',
     tags: ['React JS', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
@@ -192,7 +200,8 @@ let projects = [{
     releaseDate: '30/06/2018',
     widthImagen: '150',
     url: 'http://ineffableinventions.com.co/',
-    description: 'The amazing web page of my company. It shows information of what the name means, the projects and the team that makes part of this entrepreneurship.',
+    description:
+      'The amazing web page of my company. It shows information of what the name means, the projects and the team that makes part of this entrepreneurship.',
     tags: ['Angular 6', 'Bootstrap']
   },
   {
@@ -201,7 +210,8 @@ let projects = [{
     logo: 'LogoConsiliumMexico.png',
     releaseDate: '30/05/2018',
     widthImagen: '150',
-    description: 'Responsive web application based on an idea I had and that was developed using the MEAN stack. It exposes information about the presidental candidates of Mexico´s 2018 elections and also allows the comparation of their proposals.',
+    description:
+      'Responsive web application based on an idea I had and that was developed using the MEAN stack. It exposes information about the presidental candidates of Mexico´s 2018 elections and also allows the comparation of their proposals.',
     tags: ['Angular 5', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
@@ -210,17 +220,30 @@ let projects = [{
     releaseDate: '02/04/2018',
     widthImagen: '150',
     url: 'http://www.consiliumcol.org',
-    description: 'Responsive web application based on an original and innovative idea I had and that was developed using the MEAN stack. It exposes relevant and non partialized information about the political system of Colombia related to participation mechanisms.<br>The application accumulates more than 10.000 different visitors.',
+    description:
+      'Responsive web application based on an original and innovative idea I had and that was developed using the MEAN stack. It exposes relevant and non partialized information about the political system of Colombia related to participation mechanisms.<br>The application accumulates more than 10.000 different visitors.',
     tags: ['Angular 5', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
   }
 ];
 
-let experience = [{
+let experience = [
+  {
+    company: 'Software Colombia S.A.S.',
+    location: 'Bogotá D.C., Colombia',
+    role: 'Front-End & UX Engineer',
+    image: 'software-colombia.png',
+    description:
+      "As Front-End & UX Engineer I design and implement new components for the user interface of the oncoming second version of a well known web application. I'm also in charge of the client side security. Angular 7 is used for implementing the interface. Custom and predefined styles (CSS and SCSS) plus other dependencies are also used. The web application is responsive and the maximum user satisfaction is searched in every new implementation. Scrum is used for Agile software development.",
+    date: '11/2018 - Present',
+    link: 'https://www.software-colombia.com/'
+  },
+  {
     company: 'Autopago S.A.S.',
     location: 'Bogotá D.C., Colombia',
     role: 'CTO & Webmaster',
     image: 'autopago.png',
-    description: 'I am in charge of all the activities related with technology, such as the virtualization of data and the email configurations. I designed and implemented the <a href="http://www.autopago.com.co" target="blank">new web page</a> of the company using Angular 5 and Bootstrap. I am currently working on a system for managing the clients and the viabilities forms.',
+    description:
+      'I am in charge of all the activities related with technology, such as the virtualization of data and the email configurations. I designed and implemented the <a href="http://www.autopago.com.co" target="blank">new web page</a> of the company using Angular 5 and Bootstrap. I am currently working on a system for managing the clients and the viabilities forms.',
     date: '01/2017 - Present',
     link: 'http://www.autopago.com.co/'
   },
@@ -229,7 +252,8 @@ let experience = [{
     location: 'Bogotá D.C., Colombia',
     role: 'Webmaster',
     image: 'cibse.png',
-    description: 'I was in charge of the <a href="https://cibse.github.io/conference/" target="blank">official web page</a> of XXI Ibero-American Conference on Software Engineering. I created new sections, add a lot of new content and implemented a mobile friendly behavior to the web page. I used Bootstrap 4 for the responsive behavior and gained a lot of experience using JavaScript and creating web pages in different languages.',
+    description:
+      'I was in charge of the <a href="https://cibse.github.io/conference/" target="blank">official web page</a> of XXI Ibero-American Conference on Software Engineering. I created new sections, add a lot of new content and implemented a mobile friendly behavior to the web page. I used Bootstrap 4 for the responsive behavior and gained a lot of experience using JavaScript and creating web pages in different languages.',
     date: '01/2017 - 05/2018',
     link: 'https://cibse.github.io/conference/'
   }
@@ -294,17 +318,17 @@ function showTitle(title) {
   educationList.append(openDiv + imageColumn + '>' + image + closeDiv);
   educationList.append(
     openDiv +
-    textColumn +
-    '>' +
-    openCard +
-    'style="height: 100%">' +
-    openDiv +
-    'class="mt-2 mr-2 ml-2">' +
-    content +
-    '</p>' +
-    closeDiv +
-    closeDiv +
-    closeDiv
+      textColumn +
+      '>' +
+      openCard +
+      'style="height: 100%">' +
+      openDiv +
+      'class="mt-2 mr-2 ml-2">' +
+      content +
+      '</p>' +
+      closeDiv +
+      closeDiv +
+      closeDiv
   );
   educationList.append(startEndColumn);
 }
@@ -316,7 +340,7 @@ function showMoreTitles() {
   }
 }
 
-$('#showAllTitles').click(function () {
+$('#showAllTitles').click(function() {
   showMoreTitles();
   $('#showAllTitles').hide();
 });
@@ -351,17 +375,17 @@ function showExperience(job) {
   experienceList.append(openDiv + imageColumn + '>' + image + closeDiv);
   experienceList.append(
     openDiv +
-    textColumn +
-    '>' +
-    openCard +
-    'style="height: 100%">' +
-    openDiv +
-    'class="mt-2 mr-2 ml-2">' +
-    content +
-    '</p>' +
-    closeDiv +
-    closeDiv +
-    closeDiv
+      textColumn +
+      '>' +
+      openCard +
+      'style="height: 100%">' +
+      openDiv +
+      'class="mt-2 mr-2 ml-2">' +
+      content +
+      '</p>' +
+      closeDiv +
+      closeDiv +
+      closeDiv
   );
 }
 
@@ -373,10 +397,10 @@ function showSkill(skill) {
 
   skillsList.append(
     '<div class="slide"><img src="' +
-    skill.logo +
-    '" title="' +
-    skill.name +
-    '"></div>'
+      skill.logo +
+      '" title="' +
+      skill.name +
+      '"></div>'
   );
   if (skill.type) {
     let rating = calculateStars(skill.rating);
@@ -388,11 +412,11 @@ function showSkill(skill) {
     }
     add.append(
       '<li class="list-group-item wow fadeInDown"><div class="row"><div class="col-6">' +
-      skill.name +
-      closeDiv +
-      '<div class="col-6 text-right">' +
-      rating +
-      '</div></div></li>'
+        skill.name +
+        closeDiv +
+        '<div class="col-6 text-right">' +
+        rating +
+        '</div></div></li>'
     );
   }
 }
@@ -423,7 +447,8 @@ function skillsLogic() {
     arrows: false,
     dots: false,
     pauseOnHover: true,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 4
@@ -475,15 +500,15 @@ function showProject(project) {
 
   $('#projectsList').append(
     column +
-    cardLink +
-    cardBody +
-    image +
-    nameProyecto +
-    descripcionProyecto +
-    closeDiv +
-    hTag +
-    closeDiv +
-    closeDiv
+      cardLink +
+      cardBody +
+      image +
+      nameProyecto +
+      descripcionProyecto +
+      closeDiv +
+      hTag +
+      closeDiv +
+      closeDiv
   );
 }
 
