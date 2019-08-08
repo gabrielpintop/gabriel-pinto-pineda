@@ -189,7 +189,7 @@ let projects = [
     logo: 'LogoVPP.png',
     releaseDate: '09/09/2018',
     widthImagen: '150',
-    url: 'http://siicuidamos.org',
+    url: 'http://www.siicuidamos.org',
     description:
       'Web application that allows citizens to interact with more than 20.000 public investment projects in Colombia by knowing and commenting about the development and implementation of them.',
     tags: ['React JS', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
