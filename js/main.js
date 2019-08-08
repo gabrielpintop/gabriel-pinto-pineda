@@ -185,11 +185,11 @@ let projects = [
     tags: ['React JS', 'Meteor', 'MongoDB', 'Bootstrap', 'Heroku']
   },
   {
-    name: 'VPP',
+    name: 'Sii-Cuidamos',
     logo: 'LogoVPP.png',
     releaseDate: '09/09/2018',
     widthImagen: '150',
-    url: 'http://vpp.ineffableinventions.com.co/',
+    url: 'http://siicuidamos.org',
     description:
       'Web application that allows citizens to interact with more than 20.000 public investment projects in Colombia by knowing and commenting about the development and implementation of them.',
     tags: ['React JS', 'Node JS', 'Express', 'MongoDB', 'Bootstrap', 'Heroku']
